@@ -16,9 +16,9 @@ or alternatively using `brew cask install fastlane`
 
 # Available Actions
 ## iOS
-### ios develop
+### ios adAction
 ```
-fastlane ios develop
+fastlane ios adAction
 ```
 Description of what the lane does
 
