@@ -16,12 +16,24 @@
 default_platform(:ios)
 
 platform :ios do
-  desc "Description of what the lane does"
-  lane :adAction do
+
+lane :dev do
+    build_app(
+       scheme: "Demo02",
+       export_method:"development",
+       workspace: "Demo02.xcworkspace")
+       pgyer(api_key: "a5997105d25880cb56fe41d37bc44a1e", user_key:"8af32dbce81546db5ce510d95e5841a9")
+  end
+
+lane :ad do
     build_app(
        scheme: "Demo02",
        export_method:"ad-hoc",
        workspace: "Demo02.xcworkspace")
        pgyer(api_key: "a5997105d25880cb56fe41d37bc44a1e", user_key:"8af32dbce81546db5ce510d95e5841a9")
   end
+
+
+
+
 end
